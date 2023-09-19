@@ -1,0 +1,125 @@
+* {
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  /* Header Option Design */
+
+  ul li a {
+    transition: all 0.5s;
+  }
+  
+  ul li a:hover {
+    color: #dc3545 !important;
+  }
+  
+  /* Auto Text Type And Image */
+
+  .bg-nafees {
+    background-color: #0e1630;
+  }
+  
+  .auto-type p {
+    color: #fff;
+    font-weight: bolder;
+  }
+  
+  .auto-type {
+    margin-top: 110px;
+    letter-spacing: 8px;
+  }
+  .auto-type p span {
+    color: white;
+  }
+  
+  .auto-type p::after {
+    border-right: 3px solid #dc3545;
+    margin-left: 15px;
+    content: "";
+    animation: borderLine 0.5s infinite;
+  }
+  
+  @keyframes borderLine {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .none {
+      display: none;
+    }
+  }
+  
+  .button {
+    outline: none;
+    background-color: #dc3545;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 1px solid #dc3545;
+    margin-top: 20px;
+  }
+  /* From Css Design */
+  .input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 5px;
+  }
+  
+  .input:focus {
+    border: 1px solid #dc3545;
+  }
+  
+  .message {
+    background: linear-gradient(#dc3545, tomato);
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    font-size: 20px;
+    max-width: 200px;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .message:hover {
+    background: linear-gradient(tomato, #dc3545);
+  }
+  
+  /* up to botton arrow */
+  
+  .arrowDiv {
+    background-color: #dc3545;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #dc3545;
+    border-radius: 0px 20px;
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  .arrowDiv .nafees {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  
